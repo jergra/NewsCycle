@@ -2,12 +2,14 @@
 
 import React, { useEffect, useState } from 'react'
 import styled from'styled-components';
+import '@fortawesome/fontawesome-free/css/all.min.css';
 
 
 const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
   padding: 20px;
   height: 100vh;
   background-image: url('https://picsum.photos/200/300?grayscale');
@@ -16,6 +18,15 @@ const Container = styled.div`
   background-blend-mode: multiply;
   background-color: rgba(5, 5, 5, 0.8); /* adjust opacity here */
   font-family: 'Open Sans', sans-serif;
+`;
+
+const HeaderContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  height: 20vh;
 `;
 
 const Header = styled.h1`
@@ -28,7 +39,6 @@ const Header = styled.h1`
 const Tagline = styled.p`
   font-size: 18px;
   color: #fff;
-  margin-bottom: 120px;
 `;
 
 const SpeedSelect = styled.select`
@@ -48,7 +58,24 @@ const Option = styled.option`
   font-size: 18px;
 `;
 
+const Footer = styled.footer`
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  background-color: transparent;
+`;
+
+const GithubLink = styled.a`
+  font-size: 18px;
+  color: #777777;
+  transition: color 0.2s ease-in-out;
+  &:hover {
+    color: #555555;
+  }
+`;
+
 const NewsCycle = () => {
+    
     const [speed, setSpeed] = useState('4')
     const [intervalId, setIntervalId] = useState(null)
 
@@ -151,6 +178,7 @@ const NewsCycle = () => {
         ["Foreign Policy", "http://www.foreignpolicy.com/"],
         ["Fortnightly Review", "http://fortnightlyreview.co.uk/"],
         ["Globalist", "http://www.theglobalist.com/"],
+        ["Grist", "https://grist.org/"],
         ["Guernica Magazine", "http://www.guernicamag.com/"],
         ["Harper's", "http://www.harpers.org/"],
         ["Harvard Magazine", "https://www.harvardmagazine.com/"],
@@ -164,7 +192,7 @@ const NewsCycle = () => {
         ["Jacobin", "http://jacobinmag.com/"],
         ["Journal of Democracy", "https://www.journalofdemocracy.org/"],
         ["JSTOR Daily", "http://daily.jstor.org/"],
-        ["King's Review", "http://kingsreview.co.uk/magazine/"],
+        ["King's Review", "http://kingsreview.co.uk/"],
         ["Lambda Literary Review", "http://www.lambdaliterary.org/"],
         ["Lapham's Quarterly", "http://www.laphamsquarterly.org/"],
         ["Le Monde Diplo", "http://www.monde-diplomatique.fr/en/index.html"],
@@ -194,7 +222,6 @@ const NewsCycle = () => {
         ["Newsweek", "http://newsweek.com/"],
         ["NY Times Magazine", "https://www.nytimes.com/section/magazine"],
         ["Open Democracy", "http://www.opendemocracy.net/"],
-        ["Pacific Standard", "http://www.psmag.com"],
         ["Paris Review", "http://www.theparisreview.org/"],
         ["Philosophy & Literature", "http://muse.jhu.edu/journals/philosophy_and_literature/toc/phl.33.2.html"],
         ["Philosophy Now", "http://www.philosophynow.org/"],
@@ -313,8 +340,10 @@ const NewsCycle = () => {
     
    return (
       <Container>
-        <Header>NewsCycle</Header>
-        <Tagline>Stay informed, effortlessly.</Tagline>
+        <HeaderContainer>
+          <Header>NewsCycle</Header>
+          <Tagline>Stay informed, effortlessly.</Tagline>
+        </HeaderContainer>
         <SpeedSelect value={speed} onChange={handleSpeedChange}>
           <Option value="1">1 minutes</Option>
           <Option value="2">2 minutes</Option>
@@ -323,6 +352,11 @@ const NewsCycle = () => {
           <Option value="6">6 minutes</Option>
           <Option value="8">8 minutes</Option>
         </SpeedSelect>
+        <Footer>
+          <GithubLink href="https://github.com/jergra/NewsCycle/tree/main" target="_blank" rel="noopener noreferrer">
+            <i className="fab fa-github" />
+          </GithubLink>
+        </Footer>
       </Container>
    )
 }

@@ -76,7 +76,7 @@ const GithubLink = styled.a`
 
 const NewsCycle = () => {
     
-    const [speed, setSpeed] = useState('4')
+    const [speed, setSpeed] = useState(localStorage.getItem('speed') || '4')
     const [intervalId, setIntervalId] = useState(null)
 
     useEffect(() => {
@@ -89,6 +89,7 @@ const NewsCycle = () => {
 
     const handleSpeedChange = (e: any) => {
       setSpeed(e.target.value)
+      localStorage.setItem('speed', e.target.value)
       if (intervalId) {
         clearInterval(intervalId)
       }
@@ -141,7 +142,6 @@ const NewsCycle = () => {
         ["Aeon", "http://www.aeonmagazine.com/"],
         ["American Conservative", "http://www.amconmag.com/"],
         ["American Interest", "http://www.the-american-interest.com/"],
-        ["American Journal Rev", "http://www.ajr.org/"],
         ["American Prospect", "http://www.prospect.org/"],
         ["American Scholar", "http://www.theamericanscholar.org/"],
         ["American Scientist", "http://www.americanscientist.org/"],
@@ -195,7 +195,8 @@ const NewsCycle = () => {
         ["King's Review", "http://kingsreview.co.uk/"],
         ["Lambda Literary Review", "http://www.lambdaliterary.org/"],
         ["Lapham's Quarterly", "http://www.laphamsquarterly.org/"],
-        ["Le Monde Diplo", "http://www.monde-diplomatique.fr/en/index.html"],
+        ["Le Monde Diplo en", "https://mondediplo.com"],
+        ["Le Monde Diplo fr", "https://www.monde-diplomatique.fr/"],
         ["Liberties", "https://libertiesjournal.com/"],
         ["Logos", "http://www.logosjournal.com/"],
         ["Maclean's", "http://www.macleans.ca/"],
@@ -222,6 +223,7 @@ const NewsCycle = () => {
         ["Newsweek", "http://newsweek.com/"],
         ["NY Times Magazine", "https://www.nytimes.com/section/magazine"],
         ["Open Democracy", "http://www.opendemocracy.net/"],
+        ["Palladium Magazine", "https://www.palladiummag.com/"],
         ["Paris Review", "http://www.theparisreview.org/"],
         ["Philosophy & Literature", "http://muse.jhu.edu/journals/philosophy_and_literature/toc/phl.33.2.html"],
         ["Philosophy Now", "http://www.philosophynow.org/"],
@@ -231,6 +233,7 @@ const NewsCycle = () => {
         ["Project Syndicate", "http://www.project-syndicate.org/"],
         ["Prospect", "http://www.prospectmagazine.co.uk"],
         ["Psychology Today", "http://www.psychologytoday.com"],
+        ["Public Discourse", "https://www.thepublicdiscourse.com/"],
         ["Public Domain Review", "https://publicdomainreview.org/"],
         ["Reason", "http://reason.com/"],
         ["Salon", "http://www.salon.com/"],
@@ -258,7 +261,7 @@ const NewsCycle = () => {
         ["The Spectator", "http://www.spectator.co.uk/"],
         ["The Walrus", "http://www.walrusmagazine.ca/"],
         ["The White Review", "http://www.thewhitereview.org/"],
-        ["Threepenny Review", "http://www.threepennyreview.com/current.html"],
+        ["Threepenny Review", "http://www.threepennyreview.com/"],
         ["Tikkun", "http://www.tikkun.org/"],
         ["Time Magazine", "http://www.time.com/time"],
         ["US News", "http://www.usnews.com"],
@@ -273,7 +276,7 @@ const NewsCycle = () => {
         ["American Scholar Books", "http://theamericanscholar.org/dept/book-reviews/"],
         ["Atlantic Books", "http://www.theatlantic.com/culture/category/books/"],
         ["Australian Book Review", "http://www.australianbookreview.com.au/"],
-        ["B&N Review", "http://bnreview.barnesandnoble.com/"],
+        ["B&N Reads", "https://www.barnesandnoble.com/blog/"],
         ["Book Beast", "http://www.thedailybeast.com/newsmaker/book-beast/"],
         ["Bookforum", "http://www.bookforum.com/"],
         ["Boston Globe Books", "http://www.bostonglobe.com/arts/books"],
@@ -308,7 +311,7 @@ const NewsCycle = () => {
         ["Scotsman Books", "http://www.scotsman.com/lifestyle/books"],
         ["SF Chronicle Books", "http://www.sfgate.com/books/"],
         ["Slate Book Review", "http://www.slate.com/topics/s/slate_book_review.html"],
-        ["Spectator Books", "http://www.spectator.co.uk/books"],
+        ["Spectator Books", "http://www.spectator.co.uk/the-critics/books"],
         ["Spiked Books", "http://www.spiked-online.com/reviewofbooks"],
         ["Sydney Review of Books", "https://sydneyreviewofbooks.com/"],
         ["Tablet Books", "http://www.tabletmag.com/category/books/"],

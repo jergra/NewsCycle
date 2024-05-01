@@ -108,7 +108,7 @@ const NewsCycle = () => {
     }, [speed])
 
     const newPage = () => {
-    
+      
       const urls = [
         ["Boston Globe", "http://www.bostonglobe.com/"],
         ["Chicago Tribune", "http://www.chicagotribune.com/"],
@@ -159,7 +159,6 @@ const NewsCycle = () => {
         ["American Scientist", "http://www.americanscientist.org/"],
         ["American Spectator", "http://www.spectator.org/"],
         ["Arion", "http://www.bu.edu/arion/"],
-        ["Armed Forces Journal", "http://www.armedforcesjournal.com/"],
         ["Art News", "http://www.artnews.com/"],
         ["Artforum", "http://www.artforum.com/"],
         ["Atlantic Monthly", "http://www.theatlantic.com/magazine/"],
@@ -271,7 +270,7 @@ const NewsCycle = () => {
         ["The Point", "http://thepointmag.com/"],
         ["The Progressive", "http://www.progressive.org/"],
         ["The Spectator", "http://www.spectator.co.uk/"],
-        ["The Walrus", "http://www.walrusmagazine.ca/"],
+        ["The Walrus", "https://thewalrus.ca/"],
         ["The White Review", "http://www.thewhitereview.org/"],
         ["Threepenny Review", "http://www.threepennyreview.com/"],
         ["Tikkun", "http://www.tikkun.org/"],
@@ -368,8 +367,7 @@ const NewsCycle = () => {
             <Option value="3">3 minutes</Option>
             <Option value="4">4 minutes</Option>
             <Option value="6">6 minutes</Option>
-            <Option value="8">8 minutes</Option>
-            <Option value="80000">Stop</Option>
+            <Option value="10">10 minutes</Option>
           </SpeedSelect>
         </div>
         <Footer>

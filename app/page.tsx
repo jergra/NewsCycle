@@ -1,6 +1,6 @@
 'use client'
 
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState, useCallback } from 'react'
 import styled from'styled-components';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
@@ -76,9 +76,29 @@ const GithubLink = styled.a`
 
 const NewsCycle = () => {
     
-    const [speed, setSpeed] = useState(localStorage.getItem('speed') || '4')
+    const [speed, setSpeed] = useState('4')
     const [intervalId, setIntervalId] = useState(null)
 
+    const handleSpeedChange = useCallback((e: any) => {
+      setSpeed(() => {      
+        // update your state via callback, this gives you the option
+        // to access the previous state and set the localStorage value
+        const newSpeed = e.target.value === "4" ? "4" : e.target.value;
+        localStorage.setItem("speed", newSpeed);
+        return newSpeed;
+      });
+      if (intervalId) {
+        clearInterval(intervalId)
+      }
+    }, []);
+  
+    useEffect(() => {
+      // set the initial speed value when component mounts
+      // but only when the window object is defined
+      if (typeof window === undefined) return;
+      setSpeed(localStorage?.getItem("speed") ?? "4");
+    }, []);
+  
     useEffect(() => {
         const interval: any = setInterval(() => {
           newPage()
@@ -86,15 +106,6 @@ const NewsCycle = () => {
         setIntervalId(interval)
         return () => clearInterval(interval);
     }, [speed])
-
-    const handleSpeedChange = (e: any) => {
-      console.log('Speed changed to:', e.target.value);
-      setSpeed(e.target.value)
-      localStorage.setItem('speed', e.target.value)
-      if (intervalId) {
-        clearInterval(intervalId)
-      }
-    }
 
     const newPage = () => {
     
@@ -347,14 +358,20 @@ const NewsCycle = () => {
           <Header>NewsCycle</Header>
           <Tagline>Stay informed, effortlessly.</Tagline>
         </HeaderContainer>
-        <SpeedSelect value={speed} onChange={handleSpeedChange}>
-          <Option value="1">1 minute</Option>
-          <Option value="2">2 minutes</Option>
-          <Option value="3">3 minutes</Option>
-          <Option value="4">4 minutes</Option>
-          <Option value="6">6 minutes</Option>
-          <Option value="8">8 minutes</Option>
-        </SpeedSelect>
+        <div className="flex flex-col items-center justify-between h-1/5">
+          <button onClick={() => newPage()} className="bg-orange-500 hover:bg-orange-700 text-white font-bold py-2 px-4 rounded">
+            Start
+          </button>
+          <SpeedSelect value={speed} onChange={handleSpeedChange}>
+            <Option value="1">1 minute</Option>
+            <Option value="2">2 minutes</Option>
+            <Option value="3">3 minutes</Option>
+            <Option value="4">4 minutes</Option>
+            <Option value="6">6 minutes</Option>
+            <Option value="8">8 minutes</Option>
+            <Option value="80000">Stop</Option>
+          </SpeedSelect>
+        </div>
         <Footer>
           <GithubLink href="https://github.com/jergra/NewsCycle/tree/main" target="_blank" rel="noopener noreferrer">
             <i className="fab fa-github" />

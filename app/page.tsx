@@ -88,6 +88,7 @@ const NewsCycle = () => {
     }, [speed])
 
     const handleSpeedChange = (e: any) => {
+      console.log('Speed changed to:', e.target.value);
       setSpeed(e.target.value)
       localStorage.setItem('speed', e.target.value)
       if (intervalId) {
@@ -277,7 +278,6 @@ const NewsCycle = () => {
         ["Atlantic Books", "http://www.theatlantic.com/culture/category/books/"],
         ["Australian Book Review", "http://www.australianbookreview.com.au/"],
         ["B&N Reads", "https://www.barnesandnoble.com/blog/"],
-        ["Book Beast", "http://www.thedailybeast.com/newsmaker/book-beast/"],
         ["Bookforum", "http://www.bookforum.com/"],
         ["Boston Globe Books", "http://www.bostonglobe.com/arts/books"],
         ["Chronicle Review", "http://chronicle.com/section/Books/55/"],
@@ -348,7 +348,7 @@ const NewsCycle = () => {
           <Tagline>Stay informed, effortlessly.</Tagline>
         </HeaderContainer>
         <SpeedSelect value={speed} onChange={handleSpeedChange}>
-          <Option value="1">1 minutes</Option>
+          <Option value="1">1 minute</Option>
           <Option value="2">2 minutes</Option>
           <Option value="3">3 minutes</Option>
           <Option value="4">4 minutes</Option>

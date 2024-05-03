@@ -339,7 +339,7 @@ const NewsCycle = () => {
         const popup: any = window.open("", "w1", 'height=' + vh + ',width=' + vw + ',resizable=yes,scrollbars=yes');
         popup.focus()
         popup.location = urls[randomPage][1]
-        console.log('website: ', urls[randomPage][0])
+        console.log('site: ', urls[randomPage][0], urls[randomPage][1])
       } catch (error) {
         console.error("Failed to open new window", error)
       }

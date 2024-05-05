@@ -361,7 +361,7 @@ const NewsCycle = () => {
           <Tagline>Stay informed, effortlessly.</Tagline>
         </HeaderContainer>
         <div className="flex flex-col items-center justify-between h-1/5">
-          <button onClick={() => newPage()} className="bg-orange-500 hover:bg-orange-700 text-white text-lg font-bold py-2 px-4 mb-5 rounded-[5px]">
+          <button onClick={() => newPage()} className="bg-orange-500 hover:bg-orange-700 text-white text-lg font-bold py-2 px-4 mb-3 rounded-[5px]">
             Start
           </button>
           <SpeedSelect value={speed} onChange={handleSpeedChange}>

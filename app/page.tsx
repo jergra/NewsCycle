@@ -338,8 +338,6 @@ const NewsCycle = () => {
         ["WSJ Books", "https://www.wsj.com/arts-culture/books/"]
       ]
 
-      console.log('urls.length:', urls.length)
-
       const randomPage = Math.floor(Math.random() * (urls.length));
          
       const vw = window.screen.width

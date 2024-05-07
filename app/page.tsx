@@ -301,7 +301,7 @@ const NewsCycle = () => {
         ["CS Monitor Books", "https://www.csmonitor.com/Books/Book-Reviews"],
         ["Dublin Review", "https://drb.ie/"],
         ["Economist Culture", "https://www.economist.com/culture"],
-        ["Financial Times Books", "https://ft.com/arts/books"],
+        ["Financial Times Books", "https://www.ft.com/books"],
         ["Globe & Mail Books", "https://www.theglobeandmail.com/arts/books-and-media/book-reviews/"],
         ["Guardian Books", "https://www.theguardian.com/books"],
         ["Independent Books", "https://www.independent.co.uk/arts-entertainment/books"],
@@ -338,6 +338,8 @@ const NewsCycle = () => {
         ["WSJ Books", "https://www.wsj.com/arts-culture/books/"]
       ]
 
+      console.log('urls.length:', urls.length)
+
       const randomPage = Math.floor(Math.random() * (urls.length));
          
       const vw = window.screen.width
@@ -361,7 +363,7 @@ const NewsCycle = () => {
           <Tagline>Stay informed, effortlessly.</Tagline>
         </HeaderContainer>
         <div className="flex flex-col items-center justify-between h-1/5">
-          <button onClick={() => newPage()} className="bg-orange-500 hover:bg-orange-700 text-white text-lg font-bold py-2 px-4 mb-3 rounded-[5px]">
+          <button onClick={() => newPage()} className="bg-orange-500 hover:bg-orange-700 text-white text-lg font-bold py-2 px-4 rounded-[5px] mb-3">
             Start
           </button>
           <SpeedSelect value={speed} onChange={handleSpeedChange}>

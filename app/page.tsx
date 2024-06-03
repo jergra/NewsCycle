@@ -205,7 +205,6 @@ const NewsCycle = () => {
         ["Journal of Democracy", "https://journalofdemocracy.org/"],
         ["JSTOR Daily", "https://daily.jstor.org/"],
         ["King's Review", "https://www.kingsreview.co.uk/"],
-        ["Lambda Literary Review", "https://lambdaliteraryreview.org/"],
         ["Lapham's Quarterly", "https://www.laphamsquarterly.org/"],
         ["Le Monde Diplo en", "https://mondediplo.com"],
         ["Le Monde Diplo fr", "https://www.monde-diplomatique.fr/"],

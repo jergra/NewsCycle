@@ -285,7 +285,6 @@ const NewsCycle = () => {
         ["Utne Reader", "https://www.utne.com/"],
         ["Village Voice", "https://www.villagevoice.com/"],
         ["Washington Monthly", "https://washingtonmonthly.com/"],
-        ["Wilson Quarterly", "https://www.wilsonquarterly.com/"],
         ["Wired", "https://www.wired.com/"],
         ["Yale Review", "https://yalereview.org/"],
         ["American Scholar Books", "https://theamericanscholar.org/dept/book-reviews/"],

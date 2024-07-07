@@ -201,7 +201,6 @@ const NewsCycle = () => {
         ["Jacobin", "https://jacobinmag.com/"],
         ["Journal of Democracy", "https://journalofdemocracy.org/"],
         ["JSTOR Daily", "https://daily.jstor.org/"],
-        ["King's Review", "https://www.kingsreview.co.uk/"],
         ["Lapham's Quarterly", "https://www.laphamsquarterly.org/"],
         ["Le Monde Diplo en", "https://mondediplo.com"],
         ["Le Monde Diplo fr", "https://www.monde-diplomatique.fr/"],

@@ -351,7 +351,7 @@ const NewsCycle = () => {
       <Container>
         <HeaderContainer>
           <Header>NewsCycle</Header>
-          <Tagline>Stay informed, effortlessly</Tagline>
+          <Tagline>Stay informed, effortlessly.</Tagline>
         </HeaderContainer>
         <div className="flex flex-col items-center justify-between h-1/5">
           <button onClick={() => newPage()} className="bg-orange-500 hover:bg-orange-700 text-white text-lg font-bold py-2 px-4 rounded-[5px] mb-3">

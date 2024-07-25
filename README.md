@@ -8,3 +8,4 @@ next-14, styled-components, picsum, llama-3
 
 deployed:
     https://newscycle.vercel.app
+    https://newscycle.pages.dev/ (Cloudflare)

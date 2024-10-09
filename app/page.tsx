@@ -323,7 +323,6 @@ const NewsCycle = () => {
         ["The Nation Books", "https://www.thenation.com/culture/"],
         ["The Rumpus", "https://therumpus.net/"],
         ["The TLS", "https://www.the-tls.co.uk/"],
-        ["Times Higher Ed Books", "https://www.timeshighereducation.com/academic/books"],
         ["University Bookman", "https://kirkcenter.org/bookman/"],
         ["Washington Post", "https://www.washingtonpost.com/entertainment/books/"],
         ["Washington Times", "https://www.washingtontimes.com/books/"],

@@ -107,6 +107,8 @@ const NewsCycle = () => {
         return () => clearInterval(interval);
     }, [speed])
 
+    let popup: any = null;
+
     const newPage = () => {
       
       const urls = [
@@ -333,9 +335,13 @@ const NewsCycle = () => {
          
       const vw = window.screen.width
       const vh = window.screen.height
+
+      if (popup && !popup.closed) {
+        popup.close();
+      }
       
       try {
-        const popup: any = window.open("", "w1", 'height=' + vh + ',width=' + vw + ',resizable=yes,scrollbars=yes');
+        popup = window.open("", "w1", `height=${vh},width=${vw},resizable=yes,scrollbars=yes`);
         popup.focus()
         popup.location = urls[randomPage][1]
         console.log(urls[randomPage][0], urls[randomPage][1])
@@ -356,7 +362,7 @@ const NewsCycle = () => {
             Start
           </button>
           <SpeedSelect value={speed} onChange={handleSpeedChange}>
-            <Option value="1">1 minute</Option>
+            <Option value="0.25">1 minute</Option>
             <Option value="2">2 minutes</Option>
             <Option value="3">3 minutes</Option>
             <Option value="4">4 minutes</Option>

@@ -354,7 +354,7 @@ const NewsCycle = () => {
    return (
       <Container>
         <HeaderContainer>
-          <Header>Newscycle</Header>
+          <Header>NewsCycle</Header>
           <Tagline>Stay informed, effortlessly.</Tagline>
         </HeaderContainer>
         <div className="flex flex-col items-center justify-between h-1/5">
@@ -362,7 +362,7 @@ const NewsCycle = () => {
             Start
           </button>
           <SpeedSelect value={speed} onChange={handleSpeedChange}>
-            <Option value="0.25">1 minute</Option>
+            <Option value="1">1 minute</Option>
             <Option value="2">2 minutes</Option>
             <Option value="3">3 minutes</Option>
             <Option value="4">4 minutes</Option>

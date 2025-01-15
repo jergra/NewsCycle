@@ -354,7 +354,7 @@ const NewsCycle = () => {
    return (
       <Container>
         <HeaderContainer>
-          <Header>NewsCycle</Header>
+          <Header>Newscycle</Header>
           <Tagline>Stay informed, effortlessly.</Tagline>
         </HeaderContainer>
         <div className="flex flex-col items-center justify-between h-1/5">

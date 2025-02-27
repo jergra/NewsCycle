@@ -276,7 +276,6 @@ const NewsCycle = () => {
         ["The Spectator", "https://www.spectator.co.uk/"],
         ["TheVerge", "https://www.theverge.com/"],
         ["The Walrus", "https://thewalrus.ca/"],
-        ["The White Review", "https://www.thewhitereview.org/"],
         ["Threepenny Review", "https://www.threepennyreview.com/"],
         ["Time Magazine", "https://time.com/"],
         ["US News", "https://www.usnews.com"],

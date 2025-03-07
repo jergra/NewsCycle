@@ -140,7 +140,7 @@ const NewsCycle = () => {
         ["Washington Post", "https://www.washingtonpost.com"],
         ["ABC", "https://abcnews.go.com/"],
         ["Al Jazeera", "https://www.aljazeera.com/"],
-        ["AP", "https://hosted.ap.org/"],
+        ["AP", "https://apnews.com/"],
         ["BBC", "https://www.bbc.com/news/"],
         ["CBC", "https://www.cbc.ca/news/"],
         ["CBS", "https://www.cbsnews.com/"],

@@ -270,7 +270,6 @@ const NewsCycle = () => {
         ["The Humanist", "https://thehumanist.com/"],
         ["The Millions", "https://themillions.com/"],
         ["The Nation", "https://www.thenation.com/"],
-        ["The New Inquiry", "https://thenewinquiry.com/"],
         ["The Point", "https://thepointmag.com/"],
         ["The Progressive", "https://progressive.org/"],
         ["The Spectator", "https://www.spectator.co.uk/"],

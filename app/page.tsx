@@ -297,7 +297,6 @@ const NewsCycle = () => {
         ["Globe & Mail Books", "https://www.theglobeandmail.com/arts/books-and-media/book-reviews/"],
         ["Guardian Books", "https://www.theguardian.com/books"],
         ["Independent Books", "https://www.independent.co.uk/arts-entertainment/books"],
-        ["January Magazine", "https://januarymagazine.com"],
         ["Jewish Review of Books", "https://jewishreviewofbooks.com/"],
         ["Kirkus Reviews", "https://www.kirkusreviews.com/"],
         ["Literary Review", "https://literaryreview.co.uk/"],

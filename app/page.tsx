@@ -112,6 +112,15 @@ const NewsCycle = () => {
     const newPage = () => {
       
       const urls = [
+        ["Bloomberg", "https://www.bloomberg.com/"],
+        ["The Times of India", "https://timesofindia.indiatimes.com/"],
+        ["The Straits Times", "https://www.straitstimes.com/"],
+        ["El País", "https://english.elpais.com/"],
+        ["Le Figaro", "https://www.lefigaro.fr/international"],
+        ["The Atlantic Council", "https://www.atlanticcouncil.org/"],
+        ["The Diplomat", "https://thediplomat.com/"],
+        ["The Africa Report", "https://www.theafricareport.com/"],
+        ["Quartz", "https://qz.com/"],
         ["Boston Globe", "https://www.bostonglobe.com/"],
         ["Chicago Tribune", "https://www.chicagotribune.com/"],
         ["Chron of Higher Ed", "https://www.chronicle.com/"],
@@ -175,7 +184,6 @@ const NewsCycle = () => {
         ["City Journal", "https://www.city-journal.org/"],
         ["Columbia Journal Rev", "https://www.cjr.org/"],
         ["Commentary", "https://www.commentary.org/"],
-        ["Common-place", "https://commonplace.online/"],
         ["Commonweal", "https://www.commonwealmagazine.org/"],
         ["Current Affairs", "https://www.currentaffairs.org/"],
         ["Democracy", "https://democracyjournal.org/"],

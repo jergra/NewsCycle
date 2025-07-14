@@ -138,7 +138,7 @@ const NewsCycle = () => {
         ["National Post", "https://nationalpost.com/"],
         ["New York Times", "https://www.nytimes.com/"],
         ["New Zealand Herald", "https://www.nzherald.co.nz/"],
-        ["Observer", "https://www.theguardian.com/observer"],
+        ["Observer", "https://observer.co.uk/"],
         ["SMH", "https://www.smh.com.au/"],
         ["South China Morning Post", "https://www.scmp.com/"],
         ["The Australian", "https://www.theaustralian.com.au/"],

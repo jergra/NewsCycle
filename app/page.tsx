@@ -293,7 +293,6 @@ const NewsCycle = () => {
         ["American Scholar Books", "https://theamericanscholar.org/dept/book-reviews/"],
         ["Atlantic Books", "https://www.theatlantic.com/books/"],
         ["Australian Book Review", "https://www.australianbookreview.com.au/"],
-        ["B&N Reads", "https://www.barnesandnoble.com/blog/"],
         ["Book Riot", "https://bookriot.com/"],
         ["Bookforum", "https://www.bookforum.com/"],
         ["Boston Globe Books", "https://www.bostonglobe.com/arts/books/"],

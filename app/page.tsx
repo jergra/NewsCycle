@@ -205,7 +205,6 @@ const NewsCycle = () => {
         ["History Today", "https://www.historytoday.com/"],
         ["Hoover Digest", "https://www.hoover.org/publications/hoover-digest/"],
         ["Hudson Review", "https://hudsonreview.com/"],
-        ["Humanities", "https://www.neh.gov/news/humanities.html/"],
         ["In These Times", "https://inthesetimes.com/"],
         ["Jacobin", "https://jacobinmag.com/"],
         ["Journal of Democracy", "https://journalofdemocracy.org/"],

@@ -142,7 +142,6 @@ const NewsCycle = () => {
         ["SMH", "https://www.smh.com.au/"],
         ["South China Morning Post", "https://www.scmp.com/"],
         ["The Australian", "https://www.theaustralian.com.au/"],
-        ["The Hindu", "https://www.thehindu.com/"],
         ["The Independent", "https://www.independent.co.uk/"],
         ["USA Today", "https://www.usatoday.com/"],
         ["Wall Street Journal", "https://www.wsj.com"],

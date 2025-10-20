@@ -380,7 +380,8 @@ const NewsCycle = () => {
         ["The Pudding", "https://pudding.cool/"],
         ["Our World in Data", "https://ourworldindata.org/"],
         ["Pew Research Center", "https://www.pewresearch.org/"],
-        ["Nieman Lab", "https://www.niemanlab.org/"]
+        ["Nieman Lab", "https://www.niemanlab.org/"],
+        ['theipaper', 'https://inews.co.uk/']
 ]
 
       const randomPage = Math.floor(Math.random() * (urls.length));

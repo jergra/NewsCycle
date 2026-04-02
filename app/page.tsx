@@ -158,6 +158,7 @@ const NewsCycle = () => {
         ["Fox", "https://www.foxnews.com/"],
         ["France24", "https://www.france24.com/"],
         ["Google", "https://news.google.com/"],
+        ["YouTube", "https://youtube.com/"],
         ["MarketWatch", "https://www.marketwatch.com/"],
         ["MSNBC", "https://www.msnbc.com"],
         ["NBC", "https://www.nbcnews.com/"],

@@ -326,7 +326,6 @@ const NewsCycle = () => {
         ["The Rumpus", "https://therumpus.net/"],
         ["The TLS", "https://www.the-tls.co.uk/"],
         ["University Bookman", "https://kirkcenter.org/bookman/"],
-        ["Washington Post", "https://www.washingtonpost.com/entertainment/books/"],
         ["Washington Times", "https://www.washingtontimes.com/books/"],
         ["WSJ Books", "https://www.wsj.com/arts-culture/books/"],
 

@@ -345,7 +345,7 @@ const NewsCycle = () => {
         ['Economic Intelligence', 'https://www.eiu.com/n/content/the-eiu-update/'],
         ["World Bank Blogs", "https://blogs.worldbank.org/"],
         ["IMF Blog", "https://www.imf.org/en/Blogs"],
-        ["OECD Insights", "https://oecdinsights.org/"],
+        ["OECD", "https://oecd.org/"],
         ["Brain Pickings (The Marginalian)", "https://www.themarginalian.org/"],
         ["Scientific Reports", "https://www.nature.com/srep/"],
         ["ABC Australia", "https://www.abc.net.au/news/"],

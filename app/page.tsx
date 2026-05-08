@@ -294,7 +294,6 @@ const NewsCycle = () => {
         ["Bookforum", "https://www.bookforum.com/"],
         ["Boston Globe Books", "https://www.bostonglobe.com/arts/books/"],
         ["Complete Review", "https://complete-review.com/new/new.html"],
-        ["CS Monitor Books", "https://www.csmonitor.com/Books/Book-Reviews"],
         ["Dublin Review", "https://drb.ie/"],
         ["Economist Culture", "https://www.economist.com/culture"],
         ["Financial Times Books", "https://www.ft.com/books"],

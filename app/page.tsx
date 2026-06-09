@@ -308,6 +308,7 @@ const NewsCycle = () => {
         ["Los Angeles Review of Books", "https://lareviewofbooks.org/"],
         ["Los Angeles Times", "https://www.latimes.com/entertainment-arts/books"],
         ["Melbourne Age", "https://www.theage.com.au/culture/books"],
+        ["n + 1 mag", "https://www.nplusonemag.com/"],
         ["New Republic Books", "https://newrepublic.com/tags/books"],
         ["New Statesman Books", "https://www.newstatesman.com/culture/books"],
         ["New York Review", "https://www.nybooks.com/"],

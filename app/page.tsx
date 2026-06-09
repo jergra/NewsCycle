@@ -268,6 +268,7 @@ const NewsCycle = () => {
         ["The Conversation", "https://theconversation.com/"],
         ["The Daily Beast", "https://www.thedailybeast.com/"],
         ["The Dial", "https://www.thedial.world/"],
+        ["the drift", "https://www.thedriftmag.com/"],
         ["The Economist", "https://www.economist.com/"],
         ["The Economist 1843 Magazine", "https://www.economist.com/1843"],
         ["The European", "https://the-european.eu/"],

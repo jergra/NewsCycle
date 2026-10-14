@@ -179,6 +179,7 @@ const NewsCycle = () => {
         ["Boston Review", "https://www.bostonreview.net/"],
         ["Business Insider", "https://www.businessinsider.com/"],
         ["Cabinet", "https://cabinetmagazine.org/"],
+        ["Chronicles Magazine", "https://chroniclesmagazine.org/"],
         ["Chronicle Review", "https://www.chronicle.com/the-chronicle-review/"],
         ["City Journal", "https://www.city-journal.org/"],
         ["Columbia Journal Rev", "https://www.cjr.org/"],
